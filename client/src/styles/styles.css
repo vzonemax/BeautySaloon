@@ -1,0 +1,379 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.App {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 50px 10%;
+}
+
+.error {
+    margin: 100px 20%;
+    text-align: center;
+}
+
+.outer_modal {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.3);
+
+}
+
+.inner_modal {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    top: 30%;
+    left: 20%;
+    right: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.inner_dialog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal_close_btn {
+    background: white;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.inner_modal {
+    margin: 15px;
+}
+
+.navbar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    background-color: silver;
+    top: 0;
+    /* justify-content: right; */
+}
+
+.navbar_name {
+    text-align: center;
+    width: 40%;
+}
+
+.navbar_links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+
+}
+
+.navbar_link_item a {
+    margin: 0 15px;
+    padding: 8px;
+    color: black;
+    text-decoration: none;
+    /* border: solid white 2px; */
+    background: white;
+    border-radius: 5px;
+}
+
+.navbar_link_item a:hover {
+    /* background-color: rgba(0, 0, 0, 0.1); */
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.4);
+}
+
+.auth {
+    margin: 100px 20% 0 20%;
+    padding: 15px;
+    width: 60%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.4);
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.auth_inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auth_inputs input {
+    min-width: 200px;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.auth_submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.auth_btn {
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 15px 0;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.cards:hover {
+    cursor: pointer;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.card_image {
+    max-width: 20%;
+    height: 100%;
+    margin: 15px;
+}
+
+.card_description {
+    text-align: left;
+    margin: 15px;
+    width: 80%;
+}
+
+.card_btns {
+    width: 20%;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.masters {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 82%;
+    /* cursor: pointer; */
+}
+
+.masters_cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 15px 0;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+.master_services {
+    width: 100%;
+    display: none;
+}
+
+.master_services_active {
+    width: 100%;
+}
+
+.master_btn {
+    background: rgba(0, 0, 0, 0.1);
+    border: none;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+}
+
+.service_cards {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px 10%;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2);
+    /* border-top: solid silver 2px; */
+}
+
+.service_description {
+    width: 80%;
+}
+
+.service_btn_box {
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+    text-align: center;
+    width: 120px;
+}
+
+.service_btn {
+    width: 120px;
+    height: 4vh;
+    /* padding: 15px; */
+    /* min-width: 120px; */
+    cursor: pointer;
+}
+
+.new_service_from {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order_time_selector {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 15px 10%;
+    /* border: solid silver 2px; */
+    /* border-radius: 15px; */
+    background: rgba(0, 0, 0, 0.2);
+    ;
+    /* box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.2); */
+}
+
+.order_time_selector_item {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    /* border-right: solid rgba(0, 0, 0, 0.2) 2px; */
+}
+
+.order_time_selector_item select {
+    background: silver;
+    margin: 15px;
+    text-align: center;
+    padding: 10px;
+    min-width: 150px
+}
+
+.order_times {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 15px 10%;
+}
+
+.order_time_item {
+    border-radius: 5px;
+    min-width: 100px;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    background: silver;
+    text-align: center;
+}
+
+.orders_cards {
+    box-shadow: 0px 0px 2px 2px rgb(235, 235, 235);
+    padding: 12px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.orders_cards:hover {
+    box-shadow: 0px 0px 2px 2px rgb(201, 201, 201);
+}
+
+.orders_cards_btns_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 15px; */
+    width: 50%;
+}
+
+.orders_cards_btns {
+    padding: 2px;
+    margin: 5px 20px;
+    max-width: 200px;
+    width: 60%;
+}
+
+.orders_cards_content {
+    width: 50%;
+}
+
+.toggle {
+    display: flex;
+    flex-direction: row;
+    margin: 15px 0;
+}
+
+.toggle_btn {
+    width: 100%;
+    margin: 15px 0;
+    padding: 15px 0;
+    border: none;
+    background: rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.toggle_btn:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.toggle_btn_active {
+    background: rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.tab {
+    width: 100%;
+}
+
+.tab_btn {
+    background: rgb(245, 245, 245);
+    border: none;
+    margin-right: 3px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.tab_btn_active {
+    background: rgb(235, 235, 235);
+}
+
+.tab_btn:hover {
+    background: rgb(235, 235, 235);
+}
+
+.tab_content {
+    background: rgb(245, 245, 245);
+    min-height: 20vh;    
+    border: solid rgb(235, 235, 235) 3px;
+}
